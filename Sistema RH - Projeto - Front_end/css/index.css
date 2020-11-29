@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background-color: #333;
+    height: 3em;
+    color: #D8D8D8;
+    margin-bottom: 1em;
+}
+
+#deletarFuncionario {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    margin: 20px 0 0;
+}
+
+#selecionar1 {
+    background-color: lightseagreen;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h2 {
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border-color: teal;
+    display: flex-blox;
+}
+
+section {
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    color: #D8D8D8;
+    text-shadow: dark;
+    padding: 40px;
+    padding-bottom: .10em;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: .5em;
+}
+
+table {
+    width: 100%;
+    margin-bottom: .5em;
+    table-layout: fixed;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+td,
+th {
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: #FFFFF0;
+}
+
+label {
+    color: #555;
+    display: block;
+    margin-bottom: .2em;
+}
+
+.campo {
+    margin: 0;
+    padding-bottom: 1px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: .5em;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.campo-medio {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.grupo {
+    width: 10%;
+    display: inline-block;
+    padding: 10px 2px;
+}
+
+button {
+    padding: .5em 2em;
+    border: 0;
+    border-bottom: 3px solid;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    margin-top: -3px;
+    color: #fff;
+    background-color: #0c8cd3;
+    border-color: #04324c;
+    width: 30%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+button:active {
+    margin-top: 0px;
+    border: 0;
+}
+
+button:hover {
+    background: darkcyan;
+    transition: 0.7s all;
+}
+
+button[disabled=disabled],
+button:disabled {
+    background-color: gray;
+    border-color: darkgray;
+    transition: 1s all;
+}
+
+.adicionar-funcionario {
+    margin-top: 30px;
+}
+
+.campo-invalido {
+    border: 1px solid red;
+}
+
+.funcionario-invalido {
+    background-color: #F7819F;
+}
+
+#mensagens-erro {
+    color: #FF6347;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-size-adjust: none;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#filtrar-tabela {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.invisivel {
+    display: none;
+}
+
+.copyright {
+    color: #555;
+    font-size: 10px;
+    margin: 5px 0 0;
+    text-size-adjust: unset;
+}
+
+.logoG {
+    width: 8%;
+    height: 10%;
+    padding: 3px;
+}
+
+.modal-container {
+    background: #FFF;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+}
+
+
+.text_rodape {
+    color: black;
+    font-size: 13px;
+    margin: 20px 0 0;
+    text-align: start;
+}
+
+#rodape {
+    padding: 120px 1px;
+    text-align: center;
+    text-align: center;
+    color: #0c8cd3;
+}
+
+.caixa {
+    position: relative;
+    text-align: center;
+    font: menu;
+    font-style: oblique;
+    width: 940px;
+    margin: 0 auto;
+    display: flex-box;
+}
+
+.caixa2 {
+    padding: 120px 1px;
+    text-align: center;
+    width: 900px;
+    margin: 0 auto auto;
+    font-size: 13px;
+}
+
+footer {
+    margin: 85px 1cm;
+    text-align: center;
+    display: block;
+
+}
