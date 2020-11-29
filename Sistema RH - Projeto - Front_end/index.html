@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Entelgy - Venha ser um Entelger</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body class>
+    <header>
+        <div class="caixa">
+            <h2 class="titulo">Sistema de Gerenciamento de Funcionário</h2>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <label for="filtrar-tabela">Filtre:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do funcionário"
+                class="campo campo-medio">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cargo</th>
+                        <th>Situação</th>
+                        <th>Salário(R$)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-funcionarios">
+                    <div id="primeiro-funcionario">
+                        <tr class="funcionario">
+                            <td class="info-nome">Leonardo</td>
+                            <td class="info-idade">25</td>
+                            <td class="info-cargo"> Analista de Sistemas</td>
+                            <td class="info-situacao">Estagiário</td>
+                            <td class="info-salario">1200.00</td>
+                        </tr>
+
+                        <tr class="funcionario">
+                            <td class="info-nome">Mateus</td>
+                            <td class="info-idade">21</td>
+                            <td class="info-cargo"> Programador Java</td>
+                            <td class="info-situacao">Efetivo</td>
+                            <td class="info-salario">3200.00</td>
+                        </tr>
+
+                        <tr class="funcionario">
+                            <td class="info-nome">Rick</td>
+                            <td class="info-idade">21</td>
+                            <td class="info-cargo">Financeiro</td>
+                            <td class="info-situacao">Efetivo</td>
+                            <td class="info-salario">3000.00</td>
+                        </tr>
+
+                        <tr class="funcionario">
+                            <td class="info-nome">Douglas</td>
+                            <td class="info-idade">55</td>
+                            <td class="info-cargo"> Analista Testador</td>
+                            <td class="info-situacao">Estagiário</td>
+                            <td class="info-salario">1200.00</td>
+                        </tr>
+                        <tr class="funcionario">
+                            <td class="info-nome">Renan</td>
+                            <td class="info-idade">27</td>
+                            <td class="info-cargo">Suporte</td>
+                            <td class="info-situacao">Estagiário</td>
+                            <td class="info-salario">1200.00</td>
+                        </tr>
+                        <tr class="funcionario">
+                            <td class="info-nome">Marcos</td>
+                            <td class="info-idade">26</td>
+                            <td class="info-cargo">RH - Analista de Recursos Humanos</td>
+                            <td class="info-situacao">Estagiário</td>
+                            <td class="info-salario">1200.00</td>
+                        </tr>
+                        <tr class="funcionario">
+                            <td class="info-nome">Maria</td>
+                            <td class="info-idade">33</td>
+                            <td class="info-cargo">Analista Testador</td>
+                            <td class="info-situacao">Efetivo</td>
+                            <td class="info-salario">3200.00</td>
+                        </tr>
+                        <tr class="funcionario">
+                            <td class="info-nome">Fábio</td>
+                            <td class="info-idade">18</td>
+                            <td class="info-cargo"> Analista de Implantação</td>
+                            <td class="info-situacao">Efeitivo</td>
+                            <td class="info-salario">3200.00</td>
+                        </tr>
+                        <tr class="funcionario">
+                            <td class="info-nome">Eliza</td>
+                            <td class="info-idade">45</td>
+                            <td class="info-cargo"> Marketing</td>
+                            <td class="info-situacao">Efetivo</td>
+                            <td class="info-salario">2300.00</td>
+                        </tr>
+                        <tr class="funcionario">
+                            <td class="info-nome">Dênis</td>
+                            <td class="info-idade">66</td>
+                            <td class="info-cargo"> Comercial</td>
+                            <td class="info-situacao">Efetivo</td>
+                            <td class="info-salario">2300.00</td>
+                        </tr>
+                    </div>
+                </tbody>
+            </table>
+            <span id="erro-ajax" class="invisivel">Erro ao buscar os funcionarios</span>
+            <script>
+                $("#tabela-funcionarios").sortable();
+            </script>
+            <div id="selecionar1">
+                <h3 id="deletarFuncionario">* Para deletar um funcionário click duas vezes em seu nome *</h3>
+            </div>
+        </section>
+    </main>
+
+    <section class="container">
+        <h2 id="titulo-form">Adicionar novo funcionário</h2>
+        <ul id="mensagens-erro"></ul>
+        <form id="form-adiciona">
+            <div class="">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Insirir o nome" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="idade">Idade:</label>
+                <input id="idade" name="idade" type="text" placeholder="Insirir idade " class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="cargo">Cargo:</label>
+                <input id="cargo" name="cargo" type="text" placeholder="Insirir cargo " class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="situacao">Situação:</label>
+                <input id="situacao" type="text" placeholder="Insirir situação" class="campo campo-medio">
+            </div>
+
+            <button id="adicionar-funcionario" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
+
+    <script src="js/calcula-salario.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/remover-funcionario.js"></script>
+    <script src="js/filtra.js"></script>
+
+</body>
+
+<footer>
+    <img class="logoG" src="img/logo.png" alt="Logo Entelgy">
+    <p class="copyright">&copy; Copyright Wesley Gabriel - 2020</p>
+</footer>
+
+</html>
