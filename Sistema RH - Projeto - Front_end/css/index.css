@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: Gainsboro;
     height: 3em;
-    color: #D8D8D8;
+    color: black;
     margin-bottom: 1em;
 }
 
@@ -22,7 +22,7 @@ header {
 }
 
 #selecionar1 {
-    background-color: lightseagreen;
+    background-color: LightGrey;
     border-radius: 10px;
 }
 
@@ -127,7 +127,7 @@ button {
     margin: 0;
     margin-top: -3px;
     color: #fff;
-    background-color: #0c8cd3;
+    background-color: CadetBlue;
     border-color: #04324c;
     width: 30%;
     display: block;
